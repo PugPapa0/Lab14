@@ -20,7 +20,7 @@ class Main {
     System.out.println("Data displayed for each year begins at 360 ppm.");
     System.out.println("Each additional oil drum (🛢) represents an additional 1 ppm.");
     System.out.println();
-    System.out.println("Year                CO₂ in Atmosphere (ppm)");
+    System.out.println("Year                CO2 in Atmosphere (ppm)");
 
     printGraph(co2Levels, years);
   }
@@ -43,7 +43,7 @@ class Main {
     }
 
     System.out.println(
-            "From 2001 to 2020, the average atmospheric CO₂ levels across the globe has grown 42.92 ppm."
+            "From 2001 to 2020, the average atmospheric CO2 levels across the globe has grown 42.92 ppm."
     );
   }
 }
