@@ -22,7 +22,6 @@ class Main {
     System.out.println();
 
     System.out.println("Year                CO₂ in Atmosphere (ppm)");
-
     printGraph(co2Levels, years);
 
     double increase = co2Levels[co2Levels.length - 1] - co2Levels[0];
