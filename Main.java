@@ -21,7 +21,7 @@ class Main {
     System.out.println("Each additional oil drum (🛢) represents an additional 1 ppm.");
     System.out.println();
 
-    System.out.println("                 Year                CO₂ in Atmosphere (ppm)");
+    System.out.println("Year                CO₂ in Atmosphere (ppm)");
 
     printGraph(co2Levels, years);
 
