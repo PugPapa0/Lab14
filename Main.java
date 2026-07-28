@@ -2,10 +2,8 @@
 // COLLABORATORS:
 // LAST MODIFIED DATE:
 
-class Main
-{
-  public static void main(String[] args)
-  {
+class Main {
+  public static void main(String[] args) {
     double[] co2Levels = {
             371.32, 373.45, 375.98, 377.70, 379.98,
             382.09, 384.03, 385.83, 387.64, 390.10,
@@ -15,8 +13,7 @@ class Main
 
     int[] years = new int[20];
 
-    for(int i = 0; i < years.length; i++)
-    {
+    for (int i = 0; i < years.length; i++) {
       years[i] = 2001 + i;
     }
 
@@ -24,7 +21,7 @@ class Main
     System.out.println("Each additional oil drum (🛢) represents an additional 1 ppm.\n");
 
     System.out.print("Year");
-    UtilityBelt.printCentered(55,"CO₂ in Atmosphere (ppm)");
+    UtilityBelt.printCentered(55, "CO₂ in Atmosphere (ppm)");
 
     printGraph(co2Levels, years);
 
@@ -34,25 +31,22 @@ class Main
   }
 
 
-  public static void printBar(double value)
-  {
-    int drums = (int)(value - 360);
+  public static void printBar(double value) {
+    int drums = (int) (value - 360);
 
-    for(int i = 0; i < drums; i++)
-    {
+    for (int i = 0; i < drums; i++) {
       System.out.print("🛢");
     }
 
-    System.out.printf(" %.2f%n", value);
+    System.out.printf(" %.2f", value);
   }
 
 
-  public static void printGraph(double[] co2Levels, int[] years)
-  {
-    for(int i = 0; i < co2Levels.length; i++)
-    {
+  public static void printGraph(double[] co2Levels, int[] years) {
+    for (int i = 0; i < co2Levels.length; i++) {
       System.out.print(years[i] + " ");
       printBar(co2Levels[i]);
+      System.out.println();
     }
   }
 }
