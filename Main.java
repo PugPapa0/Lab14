@@ -21,7 +21,7 @@ class Main {
     System.out.println("Each additional oil drum (🛢) represents an additional 1 ppm.");
     System.out.println();
 
-    System.out.println("Year                CO₂ in Atmosphere (ppm)");
+    System.out.println("                 Year                CO₂ in Atmosphere (ppm)");
 
     printGraph(co2Levels, years);
 
@@ -44,7 +44,7 @@ class Main {
 
   public static void printGraph(double[] co2Levels, int[] years) {
     for (int i = 0; i < co2Levels.length; i++) {
-      System.out.print(years[i] + " ");
+      System.out.print("                 " + years[i] + " ");
       printBar(co2Levels[i]);
       System.out.println();
     }
