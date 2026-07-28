@@ -21,13 +21,9 @@ class Main {
     System.out.println("Each additional oil drum (🛢) represents an additional 1 ppm.");
     System.out.println();
     System.out.println("Year                CO₂ in Atmosphere (ppm)");
+
     printGraph(co2Levels, years);
-
-    double increase = co2Levels[co2Levels.length - 1] - co2Levels[0];
-
-    System.out.printf("From 2001 to 2020, the average atmospheric CO₂ levels across the globe has grown %.2f ppm.%n", increase);
   }
-
 
   public static void printBar(double value) {
     int drums = (int)(value - 360);
@@ -38,7 +34,6 @@ class Main {
 
     System.out.printf(" %.2f", value);
   }
-
 
   public static void printGraph(double[] co2Levels, int[] years) {
     for (int i = 0; i < co2Levels.length; i++) {
