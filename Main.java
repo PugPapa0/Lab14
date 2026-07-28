@@ -41,5 +41,11 @@ class Main {
       printBar(co2Levels[i]);
       System.out.println();
     }
+    double growth = co2Levels[co2Levels.length - 1] - co2Levels[0];
+
+    System.out.printf(
+            "From 2001 to 202, the average atmospheric CO₂ levels across the globe has grown %.2f ppm.%n",
+            growth
+    );
   }
 }
